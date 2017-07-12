@@ -50,6 +50,8 @@
 		<module>config</module>
 		<module>zuul</module>
 		<module>service</module>
+		<module>service-back</module>
 		<module>base</module>
+		<module>customer</module>
 	</modules>
 </project>

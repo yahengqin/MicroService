@@ -7,13 +7,13 @@ import org.springframework.context.annotation.Bean;
 
 @SpringBootApplication
 @EnableZuulProxy
-public class Application {
+public class ZuulApplication {
 	public static void main(String[] args) {
-		SpringApplication.run(Application.class, args);
+		SpringApplication.run(ZuulApplication.class, args);
 	}
 	
 	@Bean
-	public FilterZullPre test(){
-		return new  FilterZullPre();
+	public FilterZuulPre test(){
+		return new FilterZuulPre();
 	}
 }

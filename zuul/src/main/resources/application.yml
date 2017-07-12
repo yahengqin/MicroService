@@ -1,6 +1,6 @@
 spring:
   application:
-    name: zull
+    name: zuul
     
 server:
   port: 8080
@@ -13,10 +13,13 @@ eureka:
     fetchRegistry: true
     registryFetchIntervalSeconds: 5
     serviceUrl:
-      defaultZone: ${EUREKA_SERVICE_URL:http://localhost:8761}/eureka/
+      defaultZone: http://localhost:8761/eureka/
       
 zuul:
   routes:
-    fund:
+    service:
       path: /service/**
       service-id: service
+    customer:
+      path: /customer/**
+      service-id: customer

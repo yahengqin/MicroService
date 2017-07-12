@@ -5,7 +5,7 @@ import javax.servlet.http.HttpServletRequest;
 import com.netflix.zuul.ZuulFilter;
 import com.netflix.zuul.context.RequestContext;
 
-public class FilterZullPre extends  ZuulFilter {
+public class FilterZuulPre extends  ZuulFilter {
 
 	@Override
 	public Object run() {

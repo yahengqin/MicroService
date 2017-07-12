@@ -1,4 +1,4 @@
-package spring.cloud.microservice.servicebase;
+package com.yahengqin.microservice;
 
 import org.springframework.beans.factory.annotation.Value;
 import org.springframework.boot.SpringApplication;
@@ -10,10 +10,10 @@ import org.springframework.web.bind.annotation.RestController;
 @SpringBootApplication
 @EnableEurekaClient
 @RestController
-public class Application {
+public class ServiceBackApplication {
 
     public static void main(String[] args) {
-        SpringApplication.run(Application.class, args);
+        SpringApplication.run(ServiceBackApplication.class, args);
     }
 
     @Value("${welcomeWord}")
@@ -24,5 +24,13 @@ public class Application {
         return welcomeWord;
     }
 
+    @RequestMapping("index")
+    public String index() {
+        return "index page";
+    }
 
+    @RequestMapping("add")
+    public int add(int a, int b) {
+        return a + b;
+    }
 }

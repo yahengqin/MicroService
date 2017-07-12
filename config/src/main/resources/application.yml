@@ -1,3 +1,11 @@
+server:
+  port: 8888
+
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:8761/eureka/
+
 spring:
   application:
     name: config
@@ -8,11 +16,3 @@ spring:
       server:
         native:
           search-locations: classpath:/configs
-          
-server:
-  port: 8888
-  
-eureka:
-  client:
-    serviceUrl:
-      defaultZone: http://localhost:8761/eureka/
