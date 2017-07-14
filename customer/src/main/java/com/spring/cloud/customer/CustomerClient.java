@@ -6,7 +6,7 @@ import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RequestParam;
 
 /**
- * TODO
+ * 消费端
  *
  * @author qinqixiang
  * @since 2017/4/17 下午9:19

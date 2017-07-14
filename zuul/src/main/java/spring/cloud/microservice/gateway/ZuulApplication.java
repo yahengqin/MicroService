@@ -12,8 +12,8 @@ public class ZuulApplication {
 		SpringApplication.run(ZuulApplication.class, args);
 	}
 	
-	@Bean
-	public FilterZuulPre test(){
-		return new FilterZuulPre();
-	}
+//	@Bean
+//	public FilterZuulPre test(){
+//		return new FilterZuulPre();
+//	}
 }

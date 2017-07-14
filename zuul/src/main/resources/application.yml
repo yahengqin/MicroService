@@ -23,3 +23,16 @@ zuul:
     customer:
       path: /customer/**
       service-id: customer
+
+logging:
+  level:
+    org:
+      springframework:
+        cloud:
+          netflix:
+            zuul: debug
+
+
+
+
+
